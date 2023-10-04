@@ -1,0 +1,64 @@
+.page
+{
+   text-align:left;
+   max-width: 600px;
+   margin: 30px auto;
+   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+   background-color: white;
+   padding: 30px 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+.formstyle input,
+.formstyle textarea,
+.formstyle select
+
+{
+   border: 2px solid gray;
+   padding: 10px;
+   outline: cornflowerblue;
+   display: inline-block;
+}
+.side
+{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+   column-gap: 30px;
+   
+}
+.buttons
+{
+   background-color: #2f43f5;
+            border: 1px solid #afaaf7;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 15px;
+            display:inline-block;
+            width: 15%;
+            height: 5%;
+            color: white;
+           
+}
+.popup {
+   width: 400px;
+   height: auto;
+   background: #afaaf7;
+   border-radius: 6px;
+   position: absolute;
+   top: 10px;
+   left:50%;
+   transform:translate(-50%,-50%) scale(0.5);
+   text-align: center;
+   padding:0 30px 30px;
+   color: #333;
+   visibility: hidden;
+   transition: transform 0.4s,top 0.4s;
+   row-gap:3px;
+}
+.openpopup
+{
+   visibility: visible;
+   top:50%;
+   transform:translate(-50%,-50%) scale(1);
+
+}

@@ -1,0 +1,115 @@
+<html style="background-color: cornflowerblue;">
+   <head>
+      <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+          
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1 style="text-align: center; color: white; 
+            font-family: Arial, Helvetica, sans-serif;">Customer Survey Form</h1>
+
+<div> 
+<form  class="page" id="myform">
+  <div class="side">
+   <div class="formstyle" >
+    <label for="fName">First Name:</label><br><br>
+    <input type="text" id="fName" placeholder="Enter your FirstName" required/>
+   </div>
+   <div class="formstyle ">
+    <label for="lName">Last Name:</label><br><br>
+    <input type="text" id="lName" placeholder="Enter your LastName" required/>
+   </div>
+</div>
+ <br>
+ <div  class="side">
+ <div class="formstyle" >
+    <label for="dob">Date of Birth:</label><br><br>
+    <input type="date" id="dob" placeholder="BirthDate" required/>
+ </div>
+ <div class="formstyle">
+    <label for="country">Country:</label><br><br>
+    <select id="country" >
+        <option >Arabia</option>
+        <option >Brazil</option>
+        <option >Combodia</option>
+        <option >India</option>
+        <option >America</option>
+        <option >Japan</option>
+        <option >Philipines</option>
+        <option >Georgia</option>
+    </select>
+ </div>
+</div><br>
+<div class="side">
+ <div class="formstyle">
+    <label>Gender:</label><br><br>
+    <label for="male">Male</label>
+    <input type="checkbox" id="male" name="gender" />
+    <label for="female">Female</label>
+    <input type="checkbox" id="female" name="gender" />
+    <label for="others">Others</label>
+    <input type="checkbox" id="others" name="gender" />
+ </div>
+ <div class="formstyle">
+    <label for="job">Profession</label><br><br>
+    <input type="text" id="job" placeholder="Occupation" required>
+ </div>
+</div>
+ <br>
+ <div class="side">
+ <div class="formstyle">
+    <label for="email">Email</label><br><br>
+    <input type="email" id="email" placeholder="xyz@gmail.com" required>
+ </div>
+ <div class="formstyle">
+    <label for="mobile">Mobile Number</label><br><br>
+    <input type="tel" id="mobile" placeholder="999999999" required>
+ </div>
+</div><br>
+ <div class="formstyle">
+    <p>Is this First time you are using our products & Service?</p>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="ans">
+    <label for="no">No</label>
+    <input type="radio" id="no" name="ans">
+
+ </div>
+ <div class="formstyle">
+    <p>Would you suggest to your friends or colleagues?</p>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="suggest">
+    <label for="no">No</label>
+    <input type="radio" id="no" name="suggest">
+ </div>
+ <div class="formstyle">
+    <p>How Satisfied are you with our Company?</p>
+    <label for="satisfied">Satisfied</label>
+    <input type="radio" id="satisfied" name="opinion">
+    <label for="unsatisfied">Unsatisfied</label>
+    <input type="radio" id="unsatisfied" name="opinion">
+    <label for="undecided">Undecided</label>
+    <input type="radio" id="undecided" name="opinion">
+ </div>
+ <div class="formstyle">
+    <p>Do you have any suggestions to improve our Service?</p>
+    <textarea rows="7" cols="50" required id="comment"></textarea>
+ </div>
+ <br>
+ <div >
+ <!--<button class="buttons"  type="submit" value="save" onclick="targetpopup(event)" > submit</button> -->
+ <button class="buttons"  type="submit" value="save" onclick="openpopup(event)" > submit</button>
+ <button class="buttons" type="reset"  value="reset">Reset</button>
+</div>
+</form>
+
+<div id="popup" class="popup">
+   <p id="output"></p>
+   <button class="buttons" type="button" onclick="closepopup()">OK</button>
+</div>
+
+</div>
+<script  type="text/javascript" src="popup.js"></script>
+</body>
+</html>
